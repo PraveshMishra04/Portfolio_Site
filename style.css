@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#navbar {
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(to right, #fff, #f7d9fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+#navbar button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#navbar button:hover {
+  background-color: rgba(159, 179, 31, 0.421);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(to right top, #fff, #f7d9fb);
+}
+
+.bio {
+  width: 50%;
+  height: 100%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bio p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePic {
+  height: 600px;
+  width: 500px;
+  margin-top: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px #00f2ff, 0 0 40px #00e5ffac, 0 0 60px #00f2ff;
+  }
+
+  50% {
+    box-shadow: 0 0 30px #00f2ff, 0 0 60px #00f7ff, 0 0 90px #00f2ff;
+  }
+
+  100% {
+    box-shadow: 0 0 20px #00f2ff, 0 0 40px #00eaff, 0 0 60px #00f2ff;
+  }
+}
+
+.profilePic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.hr {
+  width: 100vw;
+  height: 1px;
+  box-shadow: 0px 2px 10px #000;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  background: linear-gradient(to right bottom, #fff, #f7d9fb);
+  font-size: 25px;
+  gap: 20px;
+}
+
+.background {
+  margin-top: 20px;
+  width: 500px;
+  height: fit-content;
+}
+
+.education {
+  height: fit-content;
+  width: 40%;
+  /* border: 2px solid black; */
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400px;
+}
+
+.education p {
+  margin-top: 20px;
+}
+
+.skills {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  flex-wrap: wrap;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#page2 h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#page2 h5 {
+  font-size: 20px;
+}
+
+#page2 input {
+  width: 150px;
+}
+
+.skills li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.edu {
+  flex: 1;
+  text-align: justify;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right top, #fff, #f7d9fb);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 600px;
+  width: 500px;
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 80px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 98%;
+  height: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  text-decoration: underline double;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.card button:hover {
+  box-shadow: 2px 2px 10px #10100f;
+}
+
+#page4 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right bottom, #fff, #f7d9fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom {
+  margin-bottom: 20px;
+}
+
+#page4 input {
+  width: 30%;
+  height: 5%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 30%;
+  height: 10%;
+  padding: 5px;
+  resize: none;
+}
+
+#page4 button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+#hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    height: auto;
+    position: fixed;
+  }
+
+  .nav-buttons {
+    width: fit-content;
+    display: none;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .nav-buttons.active {
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #page1 {
+    flex-direction: column;
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .bio,
+  .image {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .profilePic {
+    width: 300px;
+    height: 300px;
+  }
+
+  #page2 {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .edu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education,
+  .background {
+    width: 90%;
+    text-align: center;
+  }
+
+  #page3 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  #page4 input,
+  #page4 textarea {
+    width: 90%;
+  }
+}
+
+.background {
+  margin-top: 20px;
+  width: 500px;
+  height: fit-content;
+}
+
+.education {
+  height: fit-content;
+  width: 40%;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #navbar {
+    gap: 4rem;
+  }
+
+  #page1 {
+    padding-top: 80px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #page2 {
+    height: fit-content;
+  }
+
+  .bio,
+  .image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .profilePic {
+    width: 400px;
+    height: 400px;
+  }
+
+  .skills ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .edu {
+    flex-direction: column;
+  }
+}
+
+.background,
+.education {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  height: fit-content;
+  word-wrap: break-word;
+}
+
+#page3 {
+  /* flex-direction: column; */
+  height: 100vh;
+  align-items: center;
+  height: fit-content;
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center center;
+}
+#page4 {
+  padding: 20px;
+  text-align: center;
+}
+
+#page4 input,
+#page4 textarea {
+  width: 60%;
+}
