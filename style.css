@@ -432,6 +432,7 @@ textarea {
 #page3 {
   /* flex-direction: column; */
   height: 100vh;
+  padding-botom: 80px;
   align-items: center;
   height: fit-content;
 }
@@ -449,3 +450,4 @@ textarea {
 #page4 textarea {
   width: 60%;
 }
+
