@@ -37,3 +37,10 @@ let navButtons = document.querySelector(".nav-buttons");
 hamburger.addEventListener("click", () => {
   navButtons.classList.toggle("active");
 });
+document.querySelector("#weather").addEventListener("click", function(){
+    window.open("https://praveshmishra04.github.io/Weather_App/", "_blank");
+  });
+document.querySelector("#to-do_list").addEventListener("click", function(){
+    window.open("https://praveshmishra04.github.io/To-Do_List/", "_blank");
+  });
+
